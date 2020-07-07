@@ -16,5 +16,5 @@
   <li>Trie</li>
   <li>Prim's Algorithm</li>
   <li>Disjoint Set Union</li>
-  <li>Final Exan</li>
+  <li>Final Exam</li>
 </ol>
