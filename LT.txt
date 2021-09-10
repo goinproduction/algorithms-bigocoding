@@ -39,6 +39,65 @@ Heap/PriorityQueue (min/max):
     Lookup, Delete (if at all provided): O(n), we will have to scan all the elements as they are not ordered like BST
 
 HashMap/Hashtable/HashSet:
-    Insert/Delete: O(1) amortized
+    Insert/Delete: O(1) amortized Search: O(1)
     Re-size/hash: O(n)
     Contains: O(1)
+
+                Best-case       Average         Worst
+Selection Sort	Ω(n^2)	        θ(n^2)      	O(n^2)	 
+Bubble Sort	    Ω(n)	        θ(n^2)      	O(n^2)	 
+Insertion Sort	Ω(n)        	θ(n^2)      	O(n^2)	 
+Heap Sort	    Ω(n log(n)) 	θ(n log(n))	    O(n log(n))	 
+Quick Sort  	Ω(n log(n))	    θ(n log(n))	    O(n^2)	 
+Merge Sort	    Ω(n log(n))	    θ(n log(n)) 	O(n log(n))	 
+Bucket Sort	    Ω(n+k)	        θ(n+k)	        O(n^2)	 
+Radix Sort	    Ω(nk)	        θ(nk)	        O(nk)
+
+Linear Search   O(1)            O(n)            O(n)
+Binary Search   O(1)            O(log(n))       O(log(n))
+
+PreOrder: NLR
+InOrder: LNR 
+PostOrder: LRN 
+
+
+Sr. No.	    Key     	BFS	                                                     DFS
+
+2	Data structure	    Queue	                                                Stack
+3	Source	        BFS is better when target is closer to Source.	DFS is better when target is far from source.
+4	Suitablity for 
+decision tree	    As BFS considers all neighbour so it is not suitable for decision tree used in puzzle games.	DFS is more suitable for decision tree. As with one decision, we need to traverse further to augment the decision. If we reach the conclusion, we won.
+5	Speed	        BFS is slower than DFS.     	DFS is faster than BFS.
+6	Time Complexity	Time Complexity of BFS = O(V+E) where V is vertices and E is edges.	Time Complexity of DFS is also O(V+E) where V is vertices and E is edges.
+
+
+- SOLID: https://topdev.vn/blog/solid-la-gi/
+
+
+3 loại ràng buộc
+    - Inherent model based constraints
+    - Schema based constraints
+    - Application based constraints 
+ASSERTION: Element of database scheme => conditions that database must alwyas satify
+TRIGGER is Store Procedure without params. Thuc thi khi co bien co tren DB 
+TRANSACTION: Neu thanh cong se commit, neu fail se rollback
+INDEX: Tao chi muc de de truy van
+PROCEDURE: Là một tập hơp các câu SQL có thể lấy đầu vào và gửi đầu ra
+
+
+14. IDENTITY trong SQL là gì?
+Một cột IDENTITY trong SQL sẽ tự động sinh ra các giá trị số tự tăng
+
+15. NOMALIZATION – Chuẩn hóa là gì?
+Quá trình thiết kế bảng để giảm thiểu sự thừa số liệu được gọi là chuẩn hóa.
+
+- Các thuộc tính của TRANSACTION(ACID)
+Tính nguyên tử (Atomicity)
+Tính nhất quán (Consistency)
+Cô lập (Isolation)
+Độ bền (Durability)
+
+* Phân biệt PK, UNIQUE
+- Một bảng có thể có nhiều UNIQUE nhưng chỉ có 1 PK
+- UNIQUE có thể chứa NULL còn PK thì không
+
